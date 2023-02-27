@@ -1,0 +1,78 @@
+<html>
+
+    <head>
+
+        <style>
+
+            .button {
+ 
+                color: #fff;
+                background-color: #0f6fc5;
+                border-color: #0f6fc5;
+                cursor: pointer;
+    
+            } 
+            
+            .loginstyle {
+
+                -webkit-padding-start: 500px;
+                margin-top: 500px;
+                size: 10000000px;
+            }
+
+            .loginbuttonstyle {
+
+                -webkit-padding-start: 500px;
+                margin-top: 20px;
+               
+
+            }
+
+        </style>
+         <title>EasyLogin</title>
+         
+         
+
+    </head>
+    
+    <body>
+ 
+        <div class="loginstyle">
+            
+            <input type="text" id="username" value placeholder="Anmeldename">
+            <input type="password" id="password" value placeholder="Kennwort">
+    
+        </div>
+
+        <div class="loginbuttonstyle"> <button type="submit" class="button" onclick="login()" >Login</button></div>
+
+        <script>
+          
+          alert("Wenn Sie auf ok drucken bestatigen sie dass sie die Cockies aktzipieren");
+
+          function login(){
+
+          let username = document.getElementById('username').value;
+          let password = document.getElementById('password').value;
+          
+           if (username == 'Simon' && password == 'ichbins') {
+               window.location.href = 'FTS-Home.html';
+
+            }     
+            else {
+              alert('Passwort oder Anmeldenahme falsch!');
+            }
+
+            console.log("die Variable Username ist" + username);
+            console.log("die Variable Password ist" + password);
+          
+
+           }
+    
+        </script>
+
+       
+    </body>
+
+</html>
+
